@@ -14,28 +14,28 @@ class NullPointerException extends Exception //custome exception class
 }
 
 public class EmployeeExceptionDemo {
-	private String FirstName;
-	private String LastName;
+	private String FirstName;//declaration of private variable
+	private String LastName;//declaration of private variable
 	
 	
 
 	public EmployeeExceptionDemo(String firstName, String lastName) {
 		super();
-		FirstName = firstName;
-		LastName = lastName;
+		FirstName = firstName; //intilizing variable
+		LastName = lastName;//intilizing variable
 	}
 
-  void validation(String FirstName,String LastName ) throws NullPointerException 
+  void validation(String FirstName,String LastName ) throws NullPointerException //declaration of exception
   {
 	  if(FirstName== null || LastName==null)
 	   {
-		 throw new NullPointerException("Entry Missing"); //message of exception
+		 throw new NullPointerException("Entry Missing"); //throwing  exception
 	   }
 	  
 
 	  else if(FirstName.length()<3|| LastName.length()<3)
 	   {
-		 throw new NullPointerException("Name should be minimum 3 character");//message of exception
+		 throw new NullPointerException("Name should be minimum 3 character");//throwing exception
 	   }
 	  
   }
@@ -44,7 +44,7 @@ public class EmployeeExceptionDemo {
 	
 		EmployeeExceptionDemo empdm=new EmployeeExceptionDemo("Rahul", "Sharma");
 		  
-		  empdm.validation("Ra", "sh");
+		  empdm.validation("Ra", "sh");// code which cause exception
 	}
 
 }
