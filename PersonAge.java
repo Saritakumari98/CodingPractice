@@ -33,7 +33,7 @@ public class PersonAge {
          
 		for(int i=0;i<person_Age.length;i++)
 		{
-			if(person_Age[i]<18)//This line check weather person_Age[0]<18 or person_Age[1]<18......
+			if(person_Age[i]<18)//This line check whether person_Age[0]<18 or person_Age[1]<18......
 			{
 				countchildren++; //This line increase the value of countchildren=countchildren+1
 			}
