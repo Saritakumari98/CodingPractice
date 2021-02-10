@@ -37,6 +37,10 @@ public class EmployeeExceptionDemo {
 	   {
 		 throw new NullPointerException("Name should be minimum 3 character");//throwing exception
 	   }
+	  else
+	   {
+	          System.out.println("Your Name is "+FirstName+" "+LastName);
+	   }
 	  
   }
 
